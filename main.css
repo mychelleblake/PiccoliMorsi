@@ -1,4 +1,8 @@
 
+body {
+	background-image: url("assets/backgrounds/concrete-seamless.png");
+	background-repeat: repeat;
+}
 ul {
 	list-style: none;
 }
@@ -7,25 +11,68 @@ ul {
 	width: 1020px;
 	margin: auto;
 }
+
 #big-picture {
 	width: inherit;
-	height:300px;
+	height:328px;
 	background: lightgrey;
 	margin-bottom: -10;
+	clear: both;
 }
-#top-menu {
 
-	margin: 0 auto;
+#big-picture img {
+	width: 1020px;
+	height: 328px;
 }
+
+#top-menu {
+	margin: 0 auto;
+	text-decoration: none;
+	background-color: black;
+    height: 44px;
+}
+
+
+#ul-top-menu {
+	height: 30px;
+	padding: 0;
+	margin-top: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+
 #top-menu li {
 	display: inline-block;
-	width: 15%;
-	border: 1px solid lightgrey;
-	text-align: center;
-	padding: 20px;
-	margin-left: -5px;
-	margin-top: -16px;
+    width: 15%;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    text-decoration: none;
+    height: 5%;
+    margin-right: 5px;
+    color: white;
+    font-weight: bold;
 }
+
+
+
+#top-menu a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+#top-menu a:hover {
+	text-decoration: none;
+	color: #b90f0f;
+	font-weight: bold;
+}
+
+#top-menu a:hover li {
+	border-top: 3px solid #b90f0f;
+}
+
 #left-corner {
 	border-bottom-left-radius: 8px;
 }
@@ -33,7 +80,8 @@ ul {
 	border-bottom-right-radius: 8px;
 }
 #api-row {
-	width: 1050px;;
+	width: 1050px;
+	padding-top: 10px;
 }
 .api-panel {
 	display: inline-block;
@@ -42,6 +90,11 @@ ul {
 	margin-bottom: 20px;
 	height: 240px;
 	background: lightgrey;
+}
+
+.redAPI {
+	border: 3px solid #b90f0f;
+	border-radius: 5px;
 }
 
 #lower-body {
