@@ -163,6 +163,11 @@ iframe {
 	height: 1400px;
 }
 
+.tabs li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
 #right-full-panel{
 	width: 25%;
 	display: inline-block;
