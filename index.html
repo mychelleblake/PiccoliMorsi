@@ -32,7 +32,15 @@
 
 	<div id="lower-body"> <!-- 2 panels left-right, to bottom -->
 	<div id="left-full-panel">
-			TABS: | Story | Menu | Reservations | Hours | Directions(?)
+		<ul class="tabs">
+			<li class="active" rel="tab1"> Our Story</li>
+			<li rel="tab2"> Menu</li>
+			<li rel="tab3"> Reservations</li>
+			<li rel="tab4">Hours</li>
+			<li rel="tab5">Directions</li>
+			<li rel="tab6">Reviews</li>
+	</ul>
+
 	</div>
 		<div id="right-full-panel">
 			<ul id="foods">
@@ -62,30 +70,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
 	<script src="main.js"></script>
-	<script type="x-tmpl-mustache" id="formTemplate">
+	<script type="x-tmpl-mustache" id="menuFormTemplate">
 
-						{{#formData}}
-							{{#options.length}}
-							<div class="input-field" id="{{id}}">
-								<select id="select-box">
-									<option>{{label}}</option>
-								{{#options}}
-									<option value="{{value}}">{{label}}</option>
-								{{/options}}
-							</select>
-							</div>
-						{{/options.length}}
+	</script>
+	<script type="x-tmpl-mustache" id="menuformTemplate">
 
-
-							{{^options}}
-							<div class="input-field" id="{{id}}">
-								<span class="fa {{icon}} fontIcon"></span>
-								<input class="no-border" type="{{type}}" placeholder="{{label}}" id="{{id}}" />
-							</div>
-							{{/options}}
-
-						{{/formData}}
-				
-</script>
+	</script>
 </body>
 </html>
