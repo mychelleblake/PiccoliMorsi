@@ -26,7 +26,7 @@
 
 		<div id="api-row">
 			<div class="api-panel redAPI" id="news">
-				<h4 class="locationBoxH4">Latest News</h4>
+
 			</div>
 			<div class="api-panel redAPI" id="special">
 				<h4 class="locationBoxH4">Today's Special</h4>
@@ -64,7 +64,7 @@
 				<img src="assets/Logo_tabitha.jpg">
 			</div>
 
-			
+
 		</div> <!-- End of right-full-panel div -->
 
 		<div id="footer">
@@ -84,6 +84,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
 	<script src="main.js"></script>
+	<script type="x-tmpl-mustache" id="newsFormTemplate">
+		<h4 class="locationBoxH4">Latest News</h4>
+		<h5 id="news-title">{{data.title}}</h5>
+		<h5 id="news-date">{{data.date_published}}</h5>
+		<p id="news-post">{{data.post}}</p><a href="#">read more...</a>
+	</script>
+
 	<script type="x-tmpl-mustache" id="menuFormTemplate">
 
 	</script>

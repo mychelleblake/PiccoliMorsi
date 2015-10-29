@@ -108,6 +108,19 @@ ul {
 	width: 10px;
 	height: 10px;
 }
+#news h5 {
+	margin-top: 0;
+	margin-bottom: 1px;
+}
+#news-title {
+	float: left;
+}
+#news-date {
+	float: right;
+}
+#news p, a {
+	display: inline-block;
+}
 .redAPI {
 	border: 3px solid #b90f0f;
 	border-radius: 5px;

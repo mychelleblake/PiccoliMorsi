@@ -12,12 +12,12 @@ $(document).ready (function() {
 		}).then(function (newsBoxData) {
 
 			var newsDataPull = {
-				newsBoxData : newsBoxData
+				data : newsBoxData
 			};
 			console.log(newsDataPull);
-		// var newsFormTemplate = $("#newsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
-		// var formHTML = Mustache.render(newsFormTemplate, newsDataPull);
-		// $("#theForm").html(formHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+		var newsFormTemplate = $("#newsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var formHTML = Mustache.render(newsFormTemplate, newsDataPull);
+		$("#news").html(formHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 	});
 
 	// retrieve specials data
@@ -39,7 +39,6 @@ $(document).ready (function() {
 
 				var specialsData = "https://json-data.herokuapp.com/restaurant/special/1";
 
-				var spec = function() {
 					$.ajax({
 						url: specialsData,
 						method: 'get',
@@ -61,11 +60,11 @@ $(document).ready (function() {
 			// var formHTML = Mustache.render(specialsFormTemplate, specialsDataPull);
 			// $("#theForm").html(formHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 
-		});
+			});
 
 		});
 
-	};
+
 
 // retreive menu data from server
 
