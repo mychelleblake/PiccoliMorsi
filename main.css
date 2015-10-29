@@ -207,10 +207,16 @@ iframe {
 	background-color: black;
 	color: white;
 	font-size: 10px;
+	clear:both;
+	margin: 0px;
+	padding: 0px;
 }
 
 #footer ul {
 	float: left;
+	padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 #footer ul li img {
@@ -223,10 +229,16 @@ iframe {
 	margin-right: 30px;
 	margin-top: 5px;
 	display: inline-block;
+	float:left;
+	width: 30px;
+}
+
+#footerSocial {
+	float: right;
 }
 
 .copyright {
-	padding-top: 13px;
 	padding-left: 10px;
 	width: 300px;
+	float: left;
 }
