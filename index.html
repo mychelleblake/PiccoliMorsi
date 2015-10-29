@@ -10,11 +10,12 @@
 </head>
 <body>
 
-<div id="wrapper"> <!-- full page -->
-	<div id="big-picture">big picture</div>
 
-		<div id="top-menu"> <!--Menu under banner pic -->
-			<ul>
+<div id="wrapper">
+	<div id="big-picture"><img src="assets/restaurantphotos/restaurant_landscape1.jpg"/div>
+		<div id="top-menu">
+			<ul id="ul-top-menu">
+
 				<li id="left-corner"><a href="#">Story</a></li>
 				<li><a href="#">Menu</a></li>
 				<li><a href="#">Reservations</a></li>
@@ -24,9 +25,9 @@
 		</div>
 
 		<div id="api-row">
-			<div class="api-panel" id="news">news</div>
-			<div class="api-panel" id="special">specials</div>
-			<div class="api-panel" id="map">google map</div>
+			<div class="api-panel" id="news" class="redAPI">news</div>
+			<div class="api-panel" id="special" class="redAPI">specials</div>
+			<div class="api-panel" id="map" class="redAPI">google map</div>
 		</div>
 
 	<div id="lower-body"> <!-- 2 panels left-right, to bottom -->
@@ -61,5 +62,30 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
 	<script src="main.js"></script>
+	<script type="x-tmpl-mustache" id="formTemplate">
+
+						{{#formData}}
+							{{#options.length}}
+							<div class="input-field" id="{{id}}">
+								<select id="select-box">
+									<option>{{label}}</option>
+								{{#options}}
+									<option value="{{value}}">{{label}}</option>
+								{{/options}}
+							</select>
+							</div>
+						{{/options.length}}
+
+
+							{{^options}}
+							<div class="input-field" id="{{id}}">
+								<span class="fa {{icon}} fontIcon"></span>
+								<input class="no-border" type="{{type}}" placeholder="{{label}}" id="{{id}}" />
+							</div>
+							{{/options}}
+
+						{{/formData}}
+				
+</script>
 </body>
 </html>

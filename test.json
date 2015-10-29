@@ -1,0 +1,32 @@
+{
+"appetizers": [
+
+{
+"id": 1,
+"item": "Mozzarella Caprese",
+"price": 2,
+"description": "A magnificent dish made witg fresh and organic tomatos",
+"local fav": 1,
+"low sodium": 1,
+"under 500 cals": 1
+},
+{
+"id": 2,
+"item": "Cheese Plater",
+"price": 3,
+"description": "Five different options of exquisite cheeese choose by our cheff",
+"local fav": 0,
+"low sodium": 0,
+"under 500 cals": 1
+},
+{
+"id": 3,
+"item": "Tradicional Antipasto",
+"price": 3,
+"description": "Tasty and unique house recipe",
+"local fav": 1,
+"low sodium": 0,
+"under 500 cals": 1
+}
+]
+}
