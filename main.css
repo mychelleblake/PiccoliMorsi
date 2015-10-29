@@ -1,6 +1,6 @@
 
 body {
-	background-image: url("assets/backgrounds/concrete-seamless.png");
+	background-image: url("assets/backgrounds/notebook.png");
 	background-repeat: repeat;
 }
 ul {
@@ -69,6 +69,16 @@ ul {
 	font-weight: bold;
 }
 
+.paw img {
+	width: 5px;
+	height: 5px;
+}
+
+.paw {
+	width: 5px;
+	height: 5px;
+}
+
 #top-menu a:hover li {
 	border-top: 3px solid #b90f0f;
 }
@@ -82,21 +92,52 @@ ul {
 #api-row {
 	width: 1050px;
 	padding-top: 10px;
+	padding-left: 22px;
 }
 .api-panel {
 	display: inline-block;
 	width: 30%;
-	margin-right: 3%;
+	margin-right: 1%;
 	margin-bottom: 20px;
 	height: 240px;
-	background: lightgrey;
+	background: white;
+	float: left;
 }
 
+.api-panel img{
+	width: 10px;
+	height: 10px;
+}
 .redAPI {
 	border: 3px solid #b90f0f;
 	border-radius: 5px;
 }
+.locationBoxH4 {
+	text-align: center;
+	bottom-border: 1px solid #CECECE;
+}
+.locationBoxH4 img{
+	width: 10px;
+	height: 10px;
+}
+.locationBox {
+	font-size: 10px;
+	color: black;
+	text-align: center;
+	margin: auto 0px;
+}
 
+.small {
+	width:150px;
+	height:150px;
+	margin: auto 0;
+	margin-left: 79px;
+	border-radius: 5px;
+}
+
+iframe {
+	margin: auto 0;
+}
 #lower-body {
 	width: 1050px;
 }
@@ -107,26 +148,51 @@ ul {
 	background: lightgrey;
 	margin-right: 2%;
 	height: 1400px;
-
 }
+
 #right-full-panel{
 	width: 25%;
 	display: inline-block;
 	vertical-align: top;
-	background: lightblue;
+	background: white;
+	border: 3px solid #b90f0f;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#right-full-panel img {
+	height: 200px;
+	width: 200px;
 }
 
 #foods {
-
+	margin: 0 auto;
+	padding: 0;
+	margin-top:15px;
+	margin-left: 32px;
+	margin-bottom: 10px;
 }
 
 .food-photo {
 	height: 200px;
 	width: 200px;
-	background: pink;
-	margin-left: -10px;
-	margin-bottom: 20px;
+	border-radius: 5px;
 }
+
+.food-photo img {
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+}
+
+.foodPhoto {
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+
 #logo {
 	height: 200px;
 	width: 200px;
@@ -135,7 +201,44 @@ ul {
 	margin-bottom: 20px;
 }
 
-.icon {
+#footer {
+	width: 1020px;
+	height: 40px;
+	background-color: black;
+	color: white;
+	font-size: 10px;
+	clear:both;
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer ul {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer ul li img {
+	width: 25px;
+	height: 25px;
+}
+
+#footerUL li {
+	float: left;
+	margin-right: 30px;
+	margin-top: 5px;
 	display: inline-block;
-	margin-right: 15px;
+	float:left;
+	width: 30px;
+}
+
+#footerSocial {
+	float: right;
+}
+
+.copyright {
+	padding-left: 10px;
+	width: 300px;
+	float: left;
 }
