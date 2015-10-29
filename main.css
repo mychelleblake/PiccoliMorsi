@@ -118,20 +118,61 @@ ul {
 #news-date {
 	float: right;
 }
-#news p, a {
-	display: inline-block;
+
+#news-post p {
+	/*text-align: justify;*/
+	overflow: hidden;
+	text-overflow-multiline: ellipsis;
+	max-height: 100px;
+	line-height: 1.5;
+	max-height: 6em;
+    position: relative;
+    background: inherit;
+  	display: block;
+    display: -webkit-box;
+    max-width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 10px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
+
+#news p, a {
+	/*text-align: justify;
+	overflow: hidden;
+	text-overflow-multiline: ellipsis;
+	max-height: 100px;
+	line-height: 1.5;
+	max-height: 6em;
+    position: relative;
+    background: inherit;
+  	display: block;
+    display: -webkit-box;
+    max-width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 10px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; */
+}
+
+#news {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 .redAPI {
 	border: 3px solid #b90f0f;
 	border-radius: 5px;
 }
 .locationBoxH4 {
 	text-align: center;
-	bottom-border: 1px solid #CECECE;
+	margin-bottom: 10px;
 }
 .locationBoxH4 img{
-	width: 10px;
-	height: 10px;
+	width: 9px;
+	height: 9px;
 }
 .locationBox {
 	font-size: 10px;
