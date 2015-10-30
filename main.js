@@ -8,8 +8,10 @@ $(document).ready (function() {
 	console.log(aboutData);
 
 	var aboutFormTemplate = $("#aboutFormTemplate").text();
-	var aboutHTML = Mustache.render(aboutFormTempate, aboutData);
-	$("")
+
+	var aboutHTML = Mustache.render(aboutFormTemplate, aboutData);
+
+	$("#tab1").html(aboutHTML);
 
 
 
@@ -34,6 +36,19 @@ $(document).ready (function() {
 	});
 
 	// retrieve specials data
+	var specialsData = "http://79.170.44.100/piccolimorsi.com/special.json";
+
+		$.ajax({
+			url: specialsData,
+			method: 'get',
+			dataType: 'json'
+		}).then(function (specialsBoxData) {
+
+			var specialsDataPull = {
+					specialsBoxData: specialsBoxData
+				};
+
+			var theSpecial = specialsBoxData.menu_item_id;
 
 
 			var menuData = "http://79.170.44.100/piccolimorsi.com/menu.json";
@@ -45,33 +60,32 @@ $(document).ready (function() {
 			}).then(function (menuBoxData) {
 
 				var menuDataPull = {
-					menuBoxData : menuBoxData
+					menuBoxData: menuBoxData
 				};
 
-				console.log(menuDataPull);
+				var menuSpecial = menuBoxData.Mains.filter(function(item){
+					if (item.id === theSpecial) {
+						return true;
+					} else {
+						return false;
+					}
+				});
+				var td = menuSpecial[0];
 
-				var specialsData = "https://json-data.herokuapp.com/restaurant/special/1";
+				var todaysSpecial = {
+					td: td
+					};
 
-					$.ajax({
-						url: specialsData,
-						method: 'get',
-						dataType: 'json'
-					}).then(function (specialsBoxData) {
-
-						var specialsDataPull = {
-								specialsBoxData : specialsBoxData
-							};
-
-					console.log(specialsDataPull);
+				var specialsFormTemplate = $("#specialsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+				var formHTML = Mustache.render(specialsFormTemplate, todaysSpecial);
+				$("#special").html(formHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 
 
 			// var menuFormTemplate = $("#menuFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
 			// var formHTML = Mustache.render(specialsFormTemplate,specialsDataPull);
 			// $("#theForm").html(formHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 
-			// var specialsFormTemplate = $("#specialsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
-			// var formHTML = Mustache.render(specialsFormTemplate, specialsDataPull);
-			// $("#theForm").html(formHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+
 
 			});
 

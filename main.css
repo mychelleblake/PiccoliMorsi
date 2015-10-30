@@ -121,6 +121,12 @@ ul {
 #news p, a {
 	display: inline-block;
 }
+#specialItem {
+	float: left;
+}
+.price {
+	float: right;
+}
 .redAPI {
 	border: 3px solid #b90f0f;
 	border-radius: 5px;

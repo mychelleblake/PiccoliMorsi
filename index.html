@@ -29,7 +29,7 @@
 
 			</div>
 			<div class="api-panel redAPI" id="special">
-				<h4 class="locationBoxH4">Today's Special</h4>
+
 			</div>
 			<div class="api-panel redAPI" id="map">
 				<h4 class="locationBoxH4">Our Location</h4>
@@ -57,8 +57,8 @@
      </div><!-- #tab1 -->
      <div id="tab2" class="tab_content">
 
-       <p><img src="images/mortal combat.jpg"> <br />
-      
+
+
 
      </div><!-- #tab2 -->
      <div id="tab3" class="tab_content">
@@ -117,16 +117,22 @@
 		<h5 id="news-date">{{data.date_published}}</h5>
 		<p id="news-post">{{data.post}}</p><a href="#">read more...</a>
 	</script>
-	<script type="x-tmpl-mustache" id="specialsFormTemplate">
 
+	<script type="x-tmpl-mustache" id="specialsFormTemplate">
+		<h4 class="locationBoxH4">Today&#39s Special</h4>
+		<p id="specialItem">{{td.item}}</p>
+		<p class="price">{{td.price}}</p><br><br>
+		<p>{{td.description}}</p>
 	</script>
+
 	<script type="x-tmpl-mustache" id="aboutFormTemplate">
 		<h3>Our Story</h3>
 		<p>{{data.text1}}</p>
-		<img src="#" />
+		<p></p>
 		<p>{{data.text2}}</p>
 	</script>
 	<script type="x-tmpl-mustache" id="menuFormTemplate">
+	
 
 	</script>
 	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
