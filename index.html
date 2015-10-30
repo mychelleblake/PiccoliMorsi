@@ -50,7 +50,32 @@
 			<li rel="tab6">Reviews</li>
 	</ul>
 
-	</div>
+	<div class="tab_container">
+
+     <div id="tab1" class="tab_content">
+
+     </div><!-- #tab1 -->
+     <div id="tab2" class="tab_content">
+
+       <p><img src="images/mortal combat.jpg"> <br />
+      
+
+     </div><!-- #tab2 -->
+     <div id="tab3" class="tab_content">
+
+
+
+     </div><!-- #tab3 -->
+     <div id="tab4" class="tab_content">
+
+
+
+     </div><!-- #tab4 -->
+
+ </div> <!-- .tab_container -->
+
+</div> <!-- End of left-full-panel -->
+
 		<div id="right-full-panel">
 			<ul id="foods">
 				<li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/appetizer.jpg"></li>
@@ -83,19 +108,36 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+	<script src="about.js"></script>
 	<script src="main.js"></script>
+	<!-- MUSTACHE TEMPLATES ********************************************************************-->
 	<script type="x-tmpl-mustache" id="newsFormTemplate">
 		<h4 class="locationBoxH4">Latest News</h4>
 		<h5 id="news-title">{{data.title}}</h5>
 		<h5 id="news-date">{{data.date_published}}</h5>
 		<p id="news-post">{{data.post}}</p><a href="#">read more...</a>
 	</script>
+	<script type="x-tmpl-mustache" id="specialsFormTemplate">
 
+	</script>
+	<script type="x-tmpl-mustache" id="aboutFormTemplate">
+		<h3>Our Story</h3>
+		<p>{{data.text1}}</p>
+		<img src="#" />
+		<p>{{data.text2}}</p>
+	</script>
 	<script type="x-tmpl-mustache" id="menuFormTemplate">
 
 	</script>
-	<script type="x-tmpl-mustache" id="menuformTemplate">
+	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
 
 	</script>
+	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
+
+	</script>
+	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
+
+	</script>
+<!-- MUSTACHE TEMPLATES ********************************************************************* -->
 </body>
 </html>

@@ -1,6 +1,19 @@
 $(document).ready (function() {
 
 
+	var aboutData = {
+		data: data
+	};
+
+	console.log(aboutData);
+
+	var aboutFormTemplate = $("#aboutFormTemplate").text();
+	var aboutHTML = Mustache.render(aboutFormTempate, aboutData);
+	$("")
+
+
+
+
 	// retrieve newsletter data
 
 		var newsData = "http://79.170.44.100/piccolimorsi.com/news.json";
