@@ -49,14 +49,124 @@
 
 	<div id="lower-body"> <!-- 2 panels left-right, to bottom -->
 	<div id="left-full-panel">
-		<ul class="tabs">
-			<li class="active" rel="tab1"> Our Story</li>
-			<li rel="tab2"> Menu</li>
-			<li rel="tab3"> Reservations</li>
-			<li rel="tab4">Hours</li>
-			<li rel="tab5">Directions</li>
-			<li rel="tab6">Reviews</li>
-	</ul>
+	
+		<div class="sp">
+			<div class="tabs">
+				<span>Our Story</span>
+				<span>Menu</span>
+				<span>Reservations</span>
+				<span>Reviews</span>
+			</div>
+
+			<div class="panelContainer">
+				<div class="panels">
+					<div class="panel">
+						<div class="panelContent">
+						<h4>Our Story</h4>
+						<p>Founded in 2012, Piccoli Morsi is the creation of owners Monchellio and her trusted Cane, Ralphillio. It all started when Monchellio and Ralphillio met at a local dog park and struck up a conversation. After finding a common love of Italian food Monchellio and Ralphillio founded Piccoli Morsi, a full service, full course Italian restaurant that caters to canines and their owners.</p>
+
+						<p>Piccoli Morsi offers a fine dining experience featuring Iron (Yard) Chef Michael Sweenio (not to be confused with famed Front End Designer Michael Sweeney). Piccoli Morsi is located in the beautiful Arts District in downtown Las Vegas and welcomes all breeds and their owners.</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panelContent">
+						<h4>Our Menu</h4>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panelContent">
+						<h4>Reservations</h4>
+							<form id="reservations">
+								<input type="text" name="fname" placeholder="First Name"/>
+								<input type="text" name="lname" placeholder="Last Name"/>
+								<input type="text" name="phone" placeholder="Phone"/>
+								<input type="text" name="email" placeholder="Email"/>
+
+								<h3>How many people in your party?</h3>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+								</select>
+
+								<h3>How many dogs in your party?</h3
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+
+								<h3>Inside or Patio?</h3>
+								<select>
+									<option>Inside</option>
+									<option>Patio</option>
+									<option>No Preference</option>
+								</select>
+								
+
+								<input type="text" name="date" placeholder="Date"/>
+								
+								<h3>Time of Reservation</h3>
+								<select>
+									<option>5:00</option>
+									<option>5:30</option>
+									<option>6:00</option>
+									<option>6:30</option>
+									<option>7:00</option>
+									<option>7:30</option>
+									<option>8:00</option>
+									<option>8:30</option>
+									<option>9:00</option>
+									<option>9:30</option>
+								</select>
+
+								<input = "submit" name="book">Book a Table/>
+
+							</form>
+
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panelContent">
+						<h4>Reviews</h4>
+
+							<div id="disqus_thread"></div>
+							<script type="text/javascript">
+							/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+							var disqus_shortname = 'piccolimorsi';
+
+							/* * * DON'T EDIT BELOW THIS LINE * * */
+							(function() {
+							var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+							dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+							(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+							<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+						</div>
+					</div>
+
+
+				</div>
+
+
+
+		</div>
+
+
+
 
 	</div>
 		<div id="right-full-panel">
@@ -92,6 +202,31 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
 	<script src="main.js"></script>
+
+<script type="x-tmpl-mustache" id="newsFormTemplate">
+		<h4 class="locationBoxH4">Latest News</h4>
+		<h5 id="news-title">{{data.title}}</h5>
+		<h5 id="news-date">{{data.date_published}}</h5>
+		<p id="news-post">{{data.post}}</p><a href="#">read more...</a>
+	</script>
+	<script type="x-tmpl-mustache" id="specialsFormTemplate">
+	</script>
+	<script type="x-tmpl-mustache" id="aboutFormTemplate">
+		<h3>Our Story</h3>
+		<p>{{data.text1}}</p>
+		<img src="#" />
+		<p>{{data.text2}}</p>
+	</script>
+	<script type="x-tmpl-mustache" id="menuFormTemplate">
+	</script>
+	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
+	</script>
+	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
+	</script>
+	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
+	</script>
+
+
 	<script type="x-tmpl-mustache" id="newsFormTemplate">
 		<h4 class="locationBoxH4">Latest News</h4>
 		<h5 id="news-title">{{data.title}}</h5>
