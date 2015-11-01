@@ -27,22 +27,22 @@ $(target_tab_selector).addClass("active");
  
  
  
-//            var oCurPhoto = $('#hero div.current');
-//            if (oNxtPhoto.length == 0)
- //               oNxtPhoto = $('#hero div:first');
+ var oCurPhoto = $('#hero div.current');
+	if (oNxtPhoto.length == 0)
+ 	oNxtPhoto = $('#hero div:first');
  
-//            oCurPhoto.removeClass('current').addClass('previous');
- //           oNxtPhoto.css({ opacity: 0.0 }).addClass('current')
- //                   .animate({ opacity: 1.0 }, 1000,
- //                               function() {
- //                                   oCurPhoto.removeClass('previous');
-  //                              });
- //       }
+	oCurPhoto.removeClass('current').addClass('previous');
+	oNxtPhoto.css({ opacity: 0.0 }).addClass('current')
+	.animate({ opacity: 1.0 }, 1000,
+	function() {
+	oCurPhoto.removeClass('previous');
+});
+}
  
- //       $(function() {
-            // create the image rotator
-  //          setInterval(rotateImages, 3000);
- //       });
+$(function() {
+create the image rotator
+setInterval(rotateImages, 3000);
+});
  
         var newsData = "http://79.170.44.100/piccolimorsi.com/news.json";
  
