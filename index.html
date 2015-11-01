@@ -1,109 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>PiccoliMorsi</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="main.css">
-
+    <meta charset="UTF-8">
+    <title>PiccoliMorsi</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slidingtabs.css">
 </head>
 <body>
 
 
 <div id="wrapper">
-	<div id="big-picture">
-		<div id="hero">
-				<div class= "current"><img src="assets/restaurantphotos/restaurant_landscape1.jpg" alt=""></div>    
-				<div><img src="assets/restaurantphotos/restaurant_landscape2.jpg" alt=""></div>
-				<div><img src="assets/restaurantphotos/restaurant_landscape3.jpg" alt=""></div>
-				<div><img src="assets/restaurantphotos/restaurant_landscape4.jpg" alt=""></div>
-				<div><img src="assets/restaurantphotos/restaurant_landscape5.jpg" alt=""></div>
-		 </div>
-	 </div>
-		<div id="top-menu">
-			<ul id="ul-top-menu">
+    <div id="big-picture">
+        <div id="hero">   
+                <div><img src="assets/restaurantphotos/slider1.jpg" alt=""></div>
+                <div><img src="assets/restaurantphotos/slider2.jpg" alt=""></div>   
+         </div>
+     </div>
 
-				<li id="left-corner"><a href="#">Story</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Reservations</a></li>
-				<li><a href="#">Hours</a></li>
-				<li id="right-corner"><a href="#">Directions</a></li>
-			</ul>
-		</div>
+    <!-- <div id="api Panel - 3 boxes across for api stuf"> -->
+        <div id="api-row">
+            <div class="api-panel redAPI" id="news">
 
-		<div id="api-row">
-			<div class="api-panel redAPI" id="news">
+            </div>
+            <div class="api-panel redAPI" id="special">
+                <h4 class="locationBoxH4">Today's Special</h4>
+            </div>
+            <div class="api-panel redAPI" id="map">
+                <h4 class="locationBoxH4">Our Location</h4>
+                <div><iframe class="small" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.335590207901!2d-115.15467894974906!3d36.15838747998808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c39ab244a1cb%3A0xd0b332727ed859dc!2s1112+S+Casino+Center+Blvd%2C+Las+Vegas%2C+NV+89104!5e0!3m2!1sen!2sus!4v1446144584501" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div></br>
+                <p class="locationBox">10001 S. Casino Center Blvd, Las Vegas, NV 89104</p>
+                <p class="locationBox">555-555-1234 * 555-555-1234 * info@piccolimorsi.com</p>
+            </div>
+        </div>
 
-			</div>
-			<div class="api-panel redAPI" id="special">
-				<h4 class="locationBoxH4">Today's Special</h4>
-			</div>
-			<div class="api-panel redAPI" id="map">
-				<h4 class="locationBoxH4">Our Location</h4>
-				<div><iframe class="small" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.335590207901!2d-115.15467894974906!3d36.15838747998808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c39ab244a1cb%3A0xd0b332727ed859dc!2s1112+S+Casino+Center+Blvd%2C+Las+Vegas%2C+NV+89104!5e0!3m2!1sen!2sus!4v1446144584501" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-				<p class="locationBox">10001 S. Casino Center Blvd, Las Vegas, NV 89104</p>
-				<p class="locationBox">555-555-1234 * 555-555-1234 * info@piccolimorsi.com</p>
-			</div>
-		</div>
+    <div id="lower-body"> <!-- 2 panels left-right, to bottom -->
+    <!-- <div id="left-full-panel"> -->
+          <div id="tabMenu">
+            <div id="toggleButton" class="toggleButton">
+            <ul class="nav nav-tabs">
+                <li class = "active">
+                    <a href = "#tab1">Our Story</a>
+                </li>
+                <li>
+                    <a href = "#tab2">Our Menu</a>
+                </li>            
+                <li>
+                    <a href = "#tab3">Reservations</a>
+                </li>
+                <li>
+                    <a href = "#tab4">Reviews</a>
+                </li>
+            </ul>             
+          </div> <!--tabMenu ends-->
 
-	<div id="lower-body"> <!-- 2 panels left-right, to bottom -->
-	<div id="left-full-panel">
-		<ul class="tabs">
-			<li class="active" rel="tab1"> Our Story</li>
-			<li rel="tab2"> Menu</li>
-			<li rel="tab3"> Reservations</li>
-			<li rel="tab4">Hours</li>
-			<li rel="tab5">Directions</li>
-			<li rel="tab6">Reviews</li>
-	</ul>
+    <!-- content in the tab menus -->
+            <section id="tab1" class="tab-content active">
+                <div>
+                    <p>Founded in 2012, Piccoli Morsi is the creation of owners Monchellio and her trusted Cane, Ralphillio. It all started when Monchellio and Ralphillio met at a local dog park and struck up a conversation. After finding a common love of Italian food Monchellio and Ralphillio founded Piccoli Morsi, a full service, full course Italian restaurant that caters to canines and their owners.</br></br>
+                    ​<img src="assets/restaurantphotos/handwritten-italian-marketing-menu-medium.jpg">Piccoli Morsi offers a fine dining experience featuring Iron (Yard) Chef Michael Sweenio (not to be confused with famed Front End Designer Michael Sweeney). Piccoli Morsi is located in the beautiful Arts District in downtown Las Vegas and welcomes all breeds and their owners.</br></br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida odio nunc, in elementum eros elementum nec. Sed a ante mauris. Morbi eleifend diam sit amet posuere sodales. Sed at pellentesque tellus. Nunc facilisis, urna eu tristique posuere, libero risus gravida purus, a convallis odio ante non odio. Cras egestas libero sit amet metus placerat, sit amet faucibus metus blandit. Duis et lectus enim. Vivamus vehicula efficitur lorem, nec vulputate purus egestas eu. </p>
+                </div>
+            </section>
 
-	</div>
-		<div id="right-full-panel">
-			<ul id="foods">
-				<li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/appetizer.jpg"></li>
-				<li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/bruschetta.jpg"></li>
-				<li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/dessert1.jpg"></li>
-				<li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/lasagna.jpg"></li>
-				<li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/wine.jpg"></li>
-			</ul>
+            <section id="tab2" class="tab-content hide">
+                <div>
+                    
+                </div>
+            </section>
 
-			<div id="logo">
-				<img src="assets/Logo_tabitha.jpg">
-			</div>
+            <section id="tab3" class="tab-content hide">
+                <div>
+                    
+                        <form id="reservations">
+                        <input type="text" name="fname" placeholder="First Name"/>
+                        <input type="text" name="lname" placeholder="Last Name"/></br>
+                        <input type="text" name="phone" placeholder="Phone"/>
+                        <input type="text" name="email" placeholder="Email"/>
+​
+                        <h3>How many people in your party?</h3>
+                         <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                          </select>
+    ​
+                        <h3>How many dogs in your party?</h3>
+                            <select>
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+    ​
+                         <h3>Inside or Patio?</h3>
+                            <select>
+                                <option>Inside</option>
+                                <option>Patio</option>
+                                <option>No Preference</option>
+                            </select>
+​                           <h3>Date requested?</h3>
+                        <input type="text" name="date" placeholder="Date requested"/>
+                                    
+                        <h3>Time of Reservation</h3>
+                            <select>
+                                <option>5:00</option>
+                                <option>5:30</option>
+                                <option>6:00</option>
+                                <option>6:30</option>
+                                <option>7:00</option>
+                                <option>7:30</option>
+                                <option>8:00</option>
+                                <option>8:30</option>
+                                <option>9:00</option>
+                                <option>9:30</option>
+                            </select>
+                            </br></br>
+                         <button type = "submit" name="book" value="Book"><a href="#">Book Now<a></button>
+
+                         <h3>You may also use Open Table to book your reservation:</h3> 
+                         <a href="#"><img src="assets/social/OpenTable.jpg"></a>
+    ​
+                         </form>
+                </div>
+            </section>
+
+            <section id="tab4" class="tab-content hide">
+                <div id="reviews">
+                   <!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_56355f15bc451(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_56355f15bc451"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_56355f15bc451=document.createElement('script');fcs_56355f15bc451.type="text/javascript";fcs_56355f15bc451.src=ajaxpath_56355f15bc451((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=56355f15bc451&s=&Size=10#!56355f15bc451");setTimeout("document.getElementById('fcs_div_56355f15bc451').appendChild(fcs_56355f15bc451)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
+                </div>
+            </section>
 
 
-		</div> <!-- End of right-full-panel div -->
 
-		<div id="footer">
-		<p class="copyright">Copyright 2015 PiccoliMorsi - Web Design by The Iron Yard</p>
-			<div id="footerSocial">
-			<ul id="footerUL">
-				<li><img src="assets/social/1446098534_facebook_online_social_media.png"</li>
-				<li><img src="assets/social/1446098542_twitter_online_social_media.png"</li>
-				<li><img src="assets/social/1446098560_instagram_online_social_media.png"</li>
-			</ul>
-			</div>
-			</div> <!-- End of footer div-->
-	</div>
-	<!-- still need a footer -->
+        <div id="right-full-panel">
+            <ul id="foods">
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/appetizer.jpg"></li>
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/bruschetta.jpg"></li>
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/dessert1.jpg"></li>
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/lasagna.jpg"></li>
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/wine.jpg"></li>
+            </ul>
+
+            <div id="logo">
+                <img src="assets/Logo_tabitha.jpg">
+            </div>
+
+
+        </div> <!-- End of right-full-panel div -->
+
+        <div id="footer">
+        <p class="copyright">Copyright 2015 PiccoliMorsi - Web Design by The Iron Yard</p>
+            <div id="footerSocial">
+            <ul id="footerUL">
+                <li><img src="assets/social/1446098534_facebook_online_social_media.png"</li>
+                <li><img src="assets/social/1446098542_twitter_online_social_media.png"</li>
+                <li><img src="assets/social/1446098560_instagram_online_social_media.png"</li>
+            </ul>
+            </div>
+            </div> <!-- End of footer div-->
+    </div>
+    <!-- still need a footer -->
 </div> <!-- END of wrapper div -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
-	<script src="main.js"></script>
-	<script type="x-tmpl-mustache" id="newsFormTemplate">
-		<h4 class="locationBoxH4">Latest News</h4>
-		<h5 id="news-title">{{data.title}}</h5>
-		<h5 id="news-date">{{data.date_published}}</h5> </br>
-		<p id="news-post">{{data.post}}&nbsp;<a href="#">Read more...</a></p>
-	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+    <script src="main.js"></script>
+    <script type="x-tmpl-mustache" id="newsFormTemplate">
+        <h4 class="locationBoxH4">Latest News</h4>
+        <h5 id="news-title">{{data.title}}</h5>
+        <h5 id="news-date">{{data.date_published}}</h5> </br>
+        <p id="news-post">{{data.post}}&nbsp;<a href="#">Read more...</a></p>
+    </script>
 
-	<script type="x-tmpl-mustache" id="menuFormTemplate">
-
-	</script>
-	<script type="x-tmpl-mustache" id="menuformTemplate">
-
-	</script>
+    <script type="x-tmpl-mustache" id="menuFormTemplate"></script>
+    <script type="x-tmpl-mustache" id="menuformTemplate"></script>
+    <script id="dsq-count-scr" src="//piccolimorsil"></script>
 </body>
 </html>

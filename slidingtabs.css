@@ -1,0 +1,69 @@
+.sp h4 {
+	font-size: 1.15em;
+	margin: 0 0 .5em 0;
+}
+
+.sp p {
+	font-size: 1em;
+	margin: 0 0 1em 0;
+}
+.sp { width: 600px; position: relative; float: left; margin: 0px 0px 10px 25px; }  
+
+.sp .tabs { position: relative; z-index: 101; width:100px; }  //display?? display: none;
+
+.sp .tabs span {
+	display: inline-block;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 8px 12px 8px 12px;
+	margin: 0px;
+	background-color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: auto;
+	float: left;
+
+}
+
+.sp .tabs p:first-child {
+	padding-left: 15px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top-left-radius: 12px;
+	width:100px;
+}
+
+.sp .tabs p:last-child {
+	padding-right: 15px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top-right-radius: 12px;
+	width:100px;
+	
+}
+
+.sp .tabs p.selected {
+	color: #999;
+	border-bottom: 1px solid #fff;
+}
+
+.sp .panel_container {
+	position: relative;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	overflow: hidden;
+	z-index: 100;
+	margin-top: -1px;
+}
+
+.sp .panel_container .panel .panel_content { padding: 15px; }
+
+.sp .panel_container .panels {position: absolute; top: 0;}
+
+.sp .panel_container .panel { position: absolute; height: 400px;}
+
+
+
+
+
+
