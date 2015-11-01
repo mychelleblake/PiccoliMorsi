@@ -1,30 +1,29 @@
-
 body {
-	background-image: url("assets/backgrounds/notebook.png");
-	background-repeat: repeat;
+    background-image: url("assets/backgrounds/mooning.png");
+    background-repeat: repeat;
 }
 ul {
-	list-style: none;
+    list-style: none;
 }
-
+ 
 #wrapper {
-	width: 1020px;
-	margin: auto;
+    width: 1020px;
+    margin: auto;
 }
-
+ 
 #big-picture {
-	width: inherit;
-	height:328px;
-	background: lightgrey;
-	margin-bottom: -10;
-	clear: both;
+    width: inherit;
+    height:316px;
+    background: lightgrey;
+    margin-bottom: -10;
+    clear: both;
 }
-
+ 
 #big-picture img {
-	width: 1020px;
-	height: 328px;
+    width: 1020px;
+    height: 316px;
 }
-
+ 
 #hero {
     height:300px;
     width:960px;
@@ -39,27 +38,27 @@ ul {
 #hero div.current {
     z-index: 2;
 }
-
+ 
 #top-menu {
-	margin: 0 auto;
-	text-decoration: none;
-	background-color: black;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: black;
     height: 44px;
 }
-
-
+ 
+ 
 #ul-top-menu {
-	height: 30px;
-	padding: 0;
-	margin-top: 0px;
-	padding-right: 5px;
-	padding-left: 5px;
+    height: 30px;
+    padding: 0;
+    margin-top: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
-
-
+ 
+ 
 #top-menu li {
-	display: inline-block;
-	width: 15%;
+    display: inline-block;
+    width: 15%;
   text-align: center;
   padding-left: 20px;
   padding-top: 10px;
@@ -69,209 +68,437 @@ ul {
   color: white;
   font-weight: bold;
 }
-
-
-
+ 
+ 
+ 
 #top-menu a {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
-
+ 
 #top-menu a:hover {
-	text-decoration: none;
-	color: #b90f0f;
-	font-weight: bold;
+    text-decoration: none;
+    color: #b90f0f;
+    font-weight: bold;
 }
-
+ 
 .paw img {
-	width: 5px;
-	height: 5px;
+    width: 5px;
+    height: 5px;
 }
-
+ 
 .paw {
-	width: 5px;
-	height: 5px;
+    width: 5px;
+    height: 5px;
 }
-
+ 
 #top-menu a:hover li {
-	border-top: 3px solid #b90f0f;
+    border-top: 3px solid #b90f0f;
 }
-
+ 
 #left-corner {
-	border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 #right-corner {
-	border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 #api-row {
-	width: 1050px;
-	padding-top: 10px;
-	padding-left: 22px;
+    width: 1050px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 0px;
+    padding-right: 0px;
 }
 .api-panel {
-	display: inline-block;
-	width: 30%;
-	margin-right: 1%;
-	margin-bottom: 20px;
-	height: 240px;
-	background: white;
-	float: left;
+    display: inline-block;
+    width: 29%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    height: 240px;
+    background: white;
+    float: left;
 }
-
+ 
 .api-panel img{
-	width: 10px;
-	height: 10px;
+    width: 10px;
+    height: 10px;
 }
 #news h5 {
-	margin-top: 0;
-	margin-bottom: 1px;
+    margin-top: 0;
+    margin-bottom: 1px;
 }
 #news-title {
-	float: left;
+    float: left;
+    color: black;
 }
 #news-date {
-	float: right;
+    float: right;
+    color: black;
 }
-#news p, a {
-	display: inline-block;
+ 
+#news-post p {
+    /*text-align: justify;*/
+    overflow: hidden;
+    text-overflow-multiline: ellipsis;
+    max-height: 100px;
+    line-height: 1.5;
+    position: relative;
+    background: inherit;
+    display: block;
+    display: -webkit-box;
+    max-width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 10px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
+ 
+
+#news {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ 
 .redAPI {
-	border: 3px solid #b90f0f;
-	border-radius: 5px;
+    border: 5px solid #b90f0f;
+    border-radius: 5px;
 }
 .locationBoxH4 {
-	text-align: center;
-	bottom-border: 1px solid #CECECE;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: "Hind", "sans-serif";
 }
 .locationBoxH4 img{
-	width: 10px;
-	height: 10px;
+    width: 9px;
+    height: 9px;
 }
 .locationBox {
-	font-size: 10px;
-	color: black;
-	text-align: center;
-	margin: auto 0px;
+    font-size: 11px;
+    color: black;
+    text-align: center;
+    margin: auto 0px;
 }
-
+ 
 .small {
-	width:150px;
-	height:150px;
-	margin: auto 0;
-	margin-left: 79px;
-	border-radius: 5px;
+    width:150px;
+    height:150px;
+    margin: auto 0;
+    margin-left: 79px;
+    border-radius: 5px;
 }
-
+ 
 iframe {
-	margin: auto 0;
+    margin: auto 0;
 }
 #lower-body {
-	width: 1050px;
+    width: 1050px;
+    display: ;
 }
-
+ 
 #left-full-panel {
-	width: 69%;
-	display: inline-block;
-	background: lightgrey;
-	margin-right: 2%;
-	height: 1400px;
+    width: 69%;
+    display: inline;
+    background: lightgrey;
+    margin-right: 2%;
+    height: 1400px;
 }
-
+ 
 .tabs li {
-	display: inline-block;
-	margin-right: 40px;
+    display: inline-block;
+    margin-right: 40px;
 }
-
+ 
 #right-full-panel{
-	width: 25%;
-	display: inline-block;
-	vertical-align: top;
-	background: white;
-	border: 3px solid #b90f0f;
-	border-radius: 5px;
-	margin: 0 auto;
-	padding: 0;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    border: 3px solid #b90f0f;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0;
+    float: right;
 }
-
+ 
 #right-full-panel img {
-	height: 200px;
-	width: 200px;
+    height: 200px;
+    width: 200px;
 }
-
+ 
 #foods {
-	margin: 0 auto;
-	padding: 0;
-	margin-top:15px;
-	margin-left: 32px;
-	margin-bottom: 10px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top:15px;
+    margin-left: 32px;
+    margin-bottom: 10px;
 }
-
+ 
 .food-photo {
-	height: 200px;
-	width: 200px;
-	border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
 }
-
+ 
 .food-photo img {
-	height: 200px;
-	width: 200px;
-	border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
 }
-
+ 
 .foodPhoto {
-	margin: 0 auto;
-	border-radius: 5px;
-	margin-bottom: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
-
-
+ 
+ 
 #logo {
-	height: 200px;
-	width: 200px;
-	background: grey;
-	margin-left: 30px;
-	margin-bottom: 20px;
+    height: 200px;
+    width: 200px;
+    background: grey;
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
-
+ 
 #footer {
-	width: 1020px;
-	height: 40px;
-	background-color: black;
-	color: white;
-	font-size: 10px;
-	clear:both;
-	margin: 0px;
-	padding: 0px;
+    width: 1020px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    clear:both;
+    margin: 0px;
+    padding: 0px;
 }
-
+ 
 #footer ul {
-	float: left;
-	padding: 0px;
-	margin: 0px;
-	padding: 0px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
-
+ 
 #footer ul li img {
-	width: 25px;
-	height: 25px;
+    width: 25px;
+    height: 25px;
 }
-
+ 
 #footerUL li {
-	float: left;
-	margin-right: 30px;
-	margin-top: 5px;
-	display: inline-block;
-	float:left;
-	width: 30px;
+    float: left;
+    margin-right: 30px;
+    margin-top: 5px;
+    display: inline-block;
+    float:left;
+    width: 30px;
 }
-
+ 
 #footerSocial {
-	float: right;
+    float: right;
 }
-
+ 
 .copyright {
-	padding-left: 10px;
-	width: 300px;
-	float: left;
+    padding-left: 10px;
+    width: 300px;
+    float: left;
+}
+ 
+ 
+/*Sliding Menu CSS */
+ 
+.nav {
+margin-bottom: 18px;
+margin-left: 0;
+list-style: none;
+width: 620px;
+}
+ 
+.nav > li > a {
+display: block;
+}
+ 
+.nav-tabs{
+*zoom: 1;
+}
+ 
+.nav-tabs:before,
+.nav-tabs:after {
+display: table;
+content: "";
+}
+ 
+.nav-tabs:after {
+clear: both;
+}
+ 
+.nav-tabs > li {
+float: left;
+}
+ 
+.nav-tabs > li > a {
+padding-right: 12px;
+padding-left: 12px;
+margin-right: 2px;
+line-height: 14px;
+}
+ 
+.nav-tabs {
+border-bottom: 3px solid #b90f0f;
+}
+ 
+.nav-tabs > li {
+margin-bottom: -1px;
+}
+ 
+.nav-tabs > li > a {
+padding-top: 8px;
+padding-bottom: 8px;
+line-height: 18px;
+border: 1px solid transparent;
+ -webkit-border-radius: 4px 4px 0 0;
+-moz-border-radius: 4px 4px 0 0;
+border-radius: 4px 4px 0 0;
+text-decoration: none;
+font-weight: bold;
+background-color: #000000;
+color: white;
+font-family: "Hind", "sans-serif";
+}
+ 
+.nav-tabs > li > a:hover {
+border-color: #000000;
+font-family: "Hind", "sans-serif";
+}
+ 
+.nav-tabs > .active > a, {
+color: #ffffff;
+cursor: default;
+background-color: #000000;
+border: 1px solid #ddd;
+border-bottom-color: transparent;
+text-decoration: none;
+font-weight: bold;
+font-family: "Hind", "sans-serif";
+}
+ 
+.nav-tabs > .active > a:hover {
+color: #b90f0f;
+cursor: default;
+background-color: #000000;
+border: 1px solid #ddd;
+border-bottom-color: transparent;
+text-decoration: none;
+font-weight: bold;
+font-family: "Hind", "sans-serif";
+}
+ 
+ 
+li {
+line-height: 18px;
+}
+ 
+.tab-content.active{
+display: block;
+}
+ 
+.tab-content.hide{
+display: none;
+}
+ 
+#tab1, #tab2, #tab3, #tab4 {
+    width: 600px;
+    max-height: 500px;
+    font-family: "Hind", "sans-serif";
+}
+ 
+#tab1 img {
+    width: 275px;
+    height: 183px;
+    float: right;
+}
+ 
+#tabMenu {
+    width: 650px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+ 
+/* Form CSS */
+ 
+#reservations {
+    font-family: "Hind", "sans-serif";
+    font-size: 12px;
+}
+ 
+#reservations img {
+    width: 100px;
+    height: 39px;
+    border: 2px solid black;
+}
+ 
+#reservations h3 {
+    font-family: "Hind", "sans-serif";
+    font-weight: bolc;
+}
+#reservations input[type="text"] {
+    margin-left: 5px;
+    padding-left: 10px;
+    width: 200px;
+    font-size: 12px;
+}
+#reservations button {
+    width: 125px;
+    height: 35px;
+    background-color: #b90f0f;
+    color: #000000;
+    font-family: "Hind", "sans-serif";
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+#reservations button a {
+    text-decoration: none;
+    font-family: "Hind", "sans-serif";
+    color: #000000;
+    font-weight: bold;
+}
+ 
+#reservations button a:hover {
+    text-decoration: none;
+    font-family: "Hind", "sans-serif";
+    color: #ffffff;
+    font-weight: bold;
+    width: 125px;
+    height: 35px;
+}
+ 
+#reservations select {
+    font-family: "Hind", "sans-serif";
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+#reservations select option {
+    font-family: "Hind", "sans-serif";
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+/* REVIEWS BOX */
+ 
+#reviews {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+ 
+width: 500px;
 }
