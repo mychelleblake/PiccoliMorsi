@@ -124,8 +124,25 @@ ul {
 #specialItem {
 	float: left;
 }
+.menu_divisions {
+	position: relative;
+	width: 100%;
+}
+.item {
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	left: 2px;
+}
 .price {
-	float: right;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	right: -10px;
+	margin-right: 10px;
+}
+.price:before {
+	content: "$";
 }
 .redAPI {
 	border: 3px solid #b90f0f;
