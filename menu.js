@@ -1,4 +1,4 @@
-{
+var menu = {
 "appetizers": [
 
     {
@@ -237,4 +237,8 @@
         "under 500 cals": 1
     }
     ]
-    }
+  };
+
+  for(var course in menu){
+    console.log(course);
+  }

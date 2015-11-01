@@ -56,9 +56,14 @@
 
      </div><!-- #tab1 -->
      <div id="tab2" class="tab_content">
-
-
-
+			 <h2>Our Menu Selections</h2>
+			 <div class="menu_divisions" id="appetizers"></div>
+			 <div class="menu_divisions" id="salads"></div>
+			 <div class="menu_divisions" id="soups"></div>
+			 <div class="menu_divisions" id="mains"></div>
+			 <div class="menu_divisions" id="drinks"></div>
+			 <div class="menu_divisions" id="desserts"></div>
+			 <div class="menu_divisions" id="dogs"></div>
 
      </div><!-- #tab2 -->
      <div id="tab3" class="tab_content">
@@ -131,19 +136,63 @@
 		<p></p>
 		<p>{{data.text2}}</p>
 	</script>
-	<script type="x-tmpl-mustache" id="menuFormTemplate">
-	
-
+	<script type="x-tmpl-mustache" id="appetizerFormTemplate">
+	<h2><em>APPETIZERS</em></h2>
+	{{#appetizers}}
+	<h4>{{item}}</h4>
+	<p class="price">{{price}}</p>
+	<p>{{description}}</p>
+	{{/appetizers}}
 	</script>
-	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
-
+	<script type="x-tmpl-mustache" id="saladFormTemplate">
+	<h2><em>SALADS</em></h2>
+	{{#salads}}
+	<h4>{{item}}</h4>
+	<p class="price">{{price}}</p>
+	<p>{{description}}</p>
+	{{/salads}}
 	</script>
-	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
-
+	<script type="x-tmpl-mustache" id="soupFormTemplate">
+	<h2><em>SOUPS</em></h2>
+	{{#soups}}
+	<h4>{{item}}</h4>
+	<p class="price">{{price}}</p>
+	<p>{{description}}</p>
+	{{/soups}}
 	</script>
-	<script type="x-tmpl-mustache" id="reservationsFormTemplate">
-
+	<script type="x-tmpl-mustache" id="mainFormTemplate">
+	<h2><em>MAINS</em></h2>
+	{{#mains}}
+	<h4>{{item}}</h4>
+	<p class="price">{{price}}</p>
+	<p>{{description}}</p>
+	{{/mains}}
 	</script>
+	<script type="x-tmpl-mustache" id="drinkFormTemplate">
+	<h2><em>DRINKS</em></h2>
+	{{#drinks}}
+	<h4>{{item}}</h4>
+	<p class="price">{{price}}</p>
+	<p>{{description}}</p>
+	{{/drinks}}
+	</script>
+	<script type="x-tmpl-mustache" id="dessertFormTemplate">
+	<h2><em>DESSERTS</em></h2>
+	{{#desserts}}
+	<h4>{{item}}</h4>
+	<p class="price">{{price}}</p>
+	<p>{{description}}</p>
+	{{/desserts}}
+	</script>
+	<script type="x-tmpl-mustache" id="dogFormTemplate">
+	<h2><em>CANE CUCINA</em></h2>
+	{{#CaneCucina}}
+	<h4>{{item}}</h4>
+	<p class="price">{{price}}</p>
+	<p>{{description}}</p>
+	{{/CaneCucina}}
+	</script>
+
 <!-- MUSTACHE TEMPLATES ********************************************************************* -->
 </body>
 </html>
