@@ -212,6 +212,19 @@ ul {
 	float: left;
 }
 
+#special-price {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.2rem;
+  top: 13px;
+  right: -10px;
+  margin: 0 10px 0 0;
+}
+#special-price:before {
+	content: "$";
+}
 #news {
     padding-left: 10px;
     padding-right: 10px;
