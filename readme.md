@@ -34,7 +34,7 @@ Create a restaurant webpage, using a combination of html markup, js, css, and re
 
 * Ralph struggles with functional js to create single Mustache/menu template. Fails, goes to plan B. 
 
-* Phil leaves team ( console.log(missPhil(humor, friendship)) )
+* Phil leaves team ( we will miss his laugh, and his daily memes!)
 
 ##Step 5 (meet at TIY Sunday)
 Merge code into master branch on remote, push a few css layout changes, fix merge conflicts. 
