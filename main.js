@@ -1,7 +1,9 @@
 
 $(document).ready (function() {
 
-
+var itemToImageMap = {
+    18: 'assets/restaurantphotos/pizza2.jpg'
+};
 
 $(".nav-tabs > li > a").click(function(event) {
     event.preventDefault();
@@ -168,8 +170,11 @@ function rotateImages() {
 						var td = menuSpecial[0];
 
 						var todaysSpecial = {
-							td: td
-							};
+							td: td,
+                            "imgsrc": itemToImageMap[td.id]
+						};
+
+                        console.log(todaysSpecial);
 
 						var specialsFormTemplate = $("#specialsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
 						var formHTML = Mustache.render(specialsFormTemplate, todaysSpecial);
