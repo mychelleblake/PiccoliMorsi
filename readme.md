@@ -40,4 +40,4 @@ Create a restaurant webpage, using a combination of html markup, js, css, and re
 Merge code into master branch on remote, push a few css layout changes, fix merge conflicts. 
 
 ##Step 6 (remote) 
-Monica/Mychelle polish visuals, Ralph writes this readme. 
+Monica/Mychelle polish visuals, Ralph writes this readme, adds food icons, and adds css styling to menu. 
