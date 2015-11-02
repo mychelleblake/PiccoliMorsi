@@ -12,7 +12,7 @@ Create a restaurant webpage, using a combination of html markup, js, css, and re
 ##Step 2 
 * Monica creates custom menu in json format, works with Mychelle on Reservation form, skeletal $.ajax calls.
 
-* Phil continues html entries, creates custom text for "Our Story" div.
+* Phil continues html entries, creates custom text for "Our Story" div. He also researched and implemented the iframe for the google maps inset. 
 
 * Mychelle cleans up overall CSS, creates restaurant logo in photoshop, works with Monica on reservation form, skeletal $.ajax calls. 
 
