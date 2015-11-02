@@ -174,9 +174,9 @@
 		<p class="copyright">Copyright 2015 PiccoliMorsi - Web Design by The Iron Yard</p>
 			<div id="footerSocial">
 			<ul id="footerUL">
-				<li><img src="assets/social/1446098534_facebook_online_social_media.png"</li>
-				<li><img src="assets/social/1446098542_twitter_online_social_media.png"</li>
-				<li><img src="assets/social/1446098560_instagram_online_social_media.png"</li>
+				<li><img src="assets/social/1446098534_facebook_online_social_media.png"/></li>
+				<li><img src="assets/social/1446098542_twitter_online_social_media.png"/></li>
+				<li><img src="assets/social/1446098560_instagram_online_social_media.png"/></li>
 			</ul>
 			</div>
 			</div> <!-- End of footer div-->
@@ -217,58 +217,77 @@
 	<h2 class="menu-course"><em>APPETIZERS</em></h2>
 	{{#appetizers}}
 	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p>
+	<p class="price">{{price}}</p><br/>
 	<p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
 	{{/appetizers}}
 	</script>
 	<script type="x-tmpl-mustache" id="saladFormTemplate">
 	<h2 class="menu-course"><em>SALADS</em></h2>
 	{{#salads}}
 	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p>
+	<p class="price">{{price}}</p><br/>
 	<p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
 	{{/salads}}
 	</script>
 	<script type="x-tmpl-mustache" id="soupFormTemplate">
   <h2 class="menu-course"><em>SOUPS</em></h2>
-	<h4 class="item">{{item}}</h4>
 	{{#soups}}
 	<h4 class="item">{{item}}</h4>
-	<p class="soup-price">cup: <span>{{price.cup}} </span></p><p class="soup-price">bowl: <span>{{price.bowl}} </span></p>
+	<p class="soup-price">cup: <span>{{price.cup}} </span></p><p class="soup-price">bowl: <span>{{price.bowl}} </span></p><br/>
 	<p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
 	{{/soups}}
 	</script>
 	<script type="x-tmpl-mustache" id="mainFormTemplate">
 	<h2 class="menu-course"><em>MAINS</em></h2>
 	{{#mains}}
 	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p>
+	<p class="price">{{price}}</p><br/>
 	<p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
 	{{/mains}}
 	</script>
 	<script type="x-tmpl-mustache" id="drinkFormTemplate">
   <h2 class="menu-course"><em>DRINKS</em></h2>
-	<h4 class="item">{{item}}</h4>
 	{{#drinks}}
 	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p>
+	<p class="price">{{price}}</p><br/>
 	<p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
 	{{/drinks}}
 	</script>
 	<script type="x-tmpl-mustache" id="dessertFormTemplate">
 	<h2 class="menu-course"><em>DESSERTS</em></h2>
 	{{#desserts}}
 	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p>
+	<p class="price">{{price}}</p><br/>
 	<p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
 	{{/desserts}}
 	</script>
 	<script type="x-tmpl-mustache" id="dogFormTemplate">
 	<h2 class="menu-course"><em>CANE CUCINA</em></h2>
 	{{#CaneCucina}}
 	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p>
+	<p class="price">{{price}}</p><br/>
 	<p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
 	{{/CaneCucina}}
 	</script>
 
