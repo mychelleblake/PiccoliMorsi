@@ -1,25 +1,51 @@
+
 $(document).ready (function() {
 
 
 
-//  OUR STORY tab *******************************************************************************
-//***********************************************************************************************
-	var aboutData = {
-		data: data
-	};
+$(".nav-tabs > li > a").click(function(event) {
+    event.preventDefault();
 
-	var aboutFormTemplate = $("#aboutFormTemplate").text();
+var active_tab_selector = $(".nav-tabs > li.active > a").attr("href");
 
-	var aboutHTML = Mustache.render(aboutFormTemplate, aboutData);
+var actived_nav = $(".nav-tabs > li.active");
+actived_nav.removeClass("active");
 
-	$("#tab1").html(aboutHTML);
-//************************************************************************
-//***********************************************************************
+$(this).parents("li").addClass("active");
+
+$(active_tab_selector).removeClass("active");
+$(active_tab_selector).addClass("hide");
+
+var target_tab_selector = $(this).attr("href");
+$(target_tab_selector).removeClass("hide");
+$(target_tab_selector).addClass("active");
+
+});
+function rotateImages() {
+			 var oCurPhoto = $('#hero div.current');
+			 var oNxtPhoto = oCurPhoto.next();
+			 if (oNxtPhoto.length === 0)
+					 oNxtPhoto = $('#hero div:first');
+
+			 oCurPhoto.removeClass('current').addClass('previous');
+			 oNxtPhoto.css({ opacity: 0.0 }).addClass('current')
+							 .animate({ opacity: 1.0 }, 1000,
+													 function() {
+															 oCurPhoto.removeClass('previous');
+													 });
+	 }
+
+	 $(function() {
+			 // create the image rotator
+			 setInterval(rotateImages, 3000);
+	 });
 
 
 
-	// NEWS div content       ***************************************************************
-	//****************************************************************************************
+
+
+		// NEWS div content       ***************************************************************
+		//****************************************************************************************
 
 		var newsData = "http://79.170.44.100/piccolimorsi.com/news.json";
 
@@ -72,31 +98,31 @@ $(document).ready (function() {
 				var appetizers = {
 					appetizers: menuBoxData.Appetizers
 				};
-				console.log(appetizers);
+
 				var salads = {
 					salads: menuBoxData.Salads
 				};
-				console.log(salads);
+
 				var soups =  {
 					soups: menuBoxData.Soups
 				};
-				console.log(soups);
+
 				var mains = {
 					mains: menuBoxData.Mains
 				};
-				console.log(mains);
+
 				var drinks = {
 					drinks: menuBoxData.Drinks
 				};
-				console.log(drinks);
+
 				var desserts = {
 					desserts: menuBoxData.Desserts
 				};
-				console.log(desserts);
+
 				var CaneCucina = {
 					CaneCucina: menuBoxData.CaneCucina
 				};
-				console.log(CaneCucina);
+				
 
 		var appetizerFormTemplate = $("#appetizerFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
 		var appetizerHTML = Mustache.render(appetizerFormTemplate, appetizers);
@@ -149,10 +175,4 @@ $(document).ready (function() {
 			});
 
 		});
-
-
-
-// retreive menu data from server
-
-
 });
