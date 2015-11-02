@@ -109,11 +109,16 @@ ul {
 }
 #api-row {
     width: 1050px;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-right: 0px; //might want to delete this
-    padding-right: 0px; //might want to delete this
+    margin-top: 30px;
 }
+#api-row:first-child {
+    margin-left: 25px;
+}
+
+#api-row:last-child {
+    margin-right: 25px;
+}
+
 .api-panel {
 	display: inline-block;
 	width: 29%;
@@ -178,6 +183,12 @@ ul {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+#special {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #specialItem {
 	float: left;
 }
@@ -240,7 +251,7 @@ iframe {
     margin: auto 0;
 }
 #lower-body {
-	width: 1050px;
+	width: 1020px;
 	display: inline-block;
 }
 #left-full-panel {
