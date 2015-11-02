@@ -19,7 +19,7 @@ ul {
 }
 
 .name{
-    
+
     font-size: 2em;
     margin: 0.67em 0;
 }
@@ -294,10 +294,11 @@ iframe {
 }
 .price {
 display: inline-block;
+vertical-align: top;
 position: relative;
 font-weight: bold;
 font-size: 1.2rem;
-top: 13px;
+top: 1px;
 right: -10px;
 margin: 0 10px 0 0;
 }
@@ -308,6 +309,7 @@ margin: 0 10px 0 0;
 
 .soup-price {
 	display: inline-block;
+  vertical-align: top;
 	position: relative;
   font-weight: bold;
   font-size: 1.2rem;
