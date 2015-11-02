@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="slidingtabs.css">
+
 </head>
 <body>
 
@@ -63,7 +63,7 @@
                 <div>
                     <p>Founded in 2012, Piccoli Morsi is the creation of owners Monchellio and her trusted Cane, Ralphillio. It all started when Monchellio and Ralphillio met at a local dog park and struck up a conversation. After finding a common love of Italian food Monchellio and Ralphillio founded Piccoli Morsi, a full service, full course Italian restaurant that caters to canines and their owners.</br></br>
                     ​<img src="assets/restaurantphotos/handwritten-italian-marketing-menu-medium.jpg">Piccoli Morsi offers a fine dining experience featuring Iron (Yard) Chef Michael Sweenio (not to be confused with famed Front End Designer Michael Sweeney). Piccoli Morsi is located in the beautiful Arts District in downtown Las Vegas and welcomes all breeds and their owners.</br></br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida odio nunc, in elementum eros elementum nec. Sed a ante mauris. Morbi eleifend diam sit amet posuere sodales. Sed at pellentesque tellus. Nunc facilisis, urna eu tristique posuere, libero risus gravida purus, a convallis odio ante non odio. Cras egestas libero sit amet metus placerat, sit amet faucibus metus blandit. Duis et lectus enim. Vivamus vehicula efficitur lorem, nec vulputate purus egestas eu. </p>
+                    Dine in comfortable Euro-style, either in our casually elegant dining room, or our beautiful outdoor beer garden, surrounded by natural landscaping with soft, twinkling lights strung through the trees, providing a subtly festive aura. Your dog will appreciate the natural surroundings, and the complementary water bowls located throughout the patio area. Relax, enjoy our 5-star Italian menu, and our special "Cane Cucina" menu with tasty treats for your 4-footed friend.</p>
                 </div>
             </section>
 
@@ -155,8 +155,8 @@
 
         <div id="right-full-panel">
             <ul id="foods">
-                <!-- <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/appetizer.jpg"></li>
-                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/bruschetta.jpg"></li> -->
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/appetizer.jpg"></li>
+                <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/bruschetta.jpg"></li>
                 <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/dessert1.jpg"></li>
                 <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/lasagna.jpg"></li>
                 <li class="food-photo"><img class="foodPhoto" src="assets/foodphotos/wine.jpg"></li>
@@ -214,59 +214,61 @@
 		<p>{{data.text2}}</p>
 	</script>
 	<script type="x-tmpl-mustache" id="appetizerFormTemplate">
-	<h2><em>APPETIZERS</em></h2>
+	<h2 class="menu-course"><em>APPETIZERS</em></h2>
 	{{#appetizers}}
 	<h4 class="item">{{item}}</h4>
 	<p class="price">{{price}}</p>
-	<p>{{description}}</p>
+	<p class="description">{{description}}</p>
 	{{/appetizers}}
 	</script>
 	<script type="x-tmpl-mustache" id="saladFormTemplate">
-	<h2><em>SALADS</em></h2>
+	<h2 class="menu-course"><em>SALADS</em></h2>
 	{{#salads}}
 	<h4 class="item">{{item}}</h4>
 	<p class="price">{{price}}</p>
-	<p>{{description}}</p>
+	<p class="description">{{description}}</p>
 	{{/salads}}
 	</script>
 	<script type="x-tmpl-mustache" id="soupFormTemplate">
+  <h2 class="menu-course"><em>SOUPS</em></h2>
 	<h4 class="item">{{item}}</h4>
 	{{#soups}}
-	<h4>{{item}}</h4>
-	<p class="price">cup: {{price.cup}} </p><p class="price">bowl: {{price.bowl}} </p>
-	<p>{{description}}</p>
+	<h4 class="item">{{item}}</h4>
+	<p class="soup-price">cup: <span>{{price.cup}} </span></p><p class="soup-price">bowl: <span>{{price.bowl}} </span></p>
+	<p class="description">{{description}}</p>
 	{{/soups}}
 	</script>
 	<script type="x-tmpl-mustache" id="mainFormTemplate">
-	<h2><em>MAINS</em></h2>
+	<h2 class="menu-course"><em>MAINS</em></h2>
 	{{#mains}}
 	<h4 class="item">{{item}}</h4>
 	<p class="price">{{price}}</p>
-	<p>{{description}}</p>
+	<p class="description">{{description}}</p>
 	{{/mains}}
 	</script>
 	<script type="x-tmpl-mustache" id="drinkFormTemplate">
+  <h2 class="menu-course"><em>DRINKS</em></h2>
 	<h4 class="item">{{item}}</h4>
 	{{#drinks}}
-	<h4>{{item}}</h4>
+	<h4 class="item">{{item}}</h4>
 	<p class="price">{{price}}</p>
-	<p>{{description}}</p>
+	<p class="description">{{description}}</p>
 	{{/drinks}}
 	</script>
 	<script type="x-tmpl-mustache" id="dessertFormTemplate">
-	<h2><em>DESSERTS</em></h2>
+	<h2 class="menu-course"><em>DESSERTS</em></h2>
 	{{#desserts}}
 	<h4 class="item">{{item}}</h4>
 	<p class="price">{{price}}</p>
-	<p>{{description}}</p>
+	<p class="description">{{description}}</p>
 	{{/desserts}}
 	</script>
 	<script type="x-tmpl-mustache" id="dogFormTemplate">
-	<h2><em>CANE CUCINA</em></h2>
+	<h2 class="menu-course"><em>CANE CUCINA</em></h2>
 	{{#CaneCucina}}
 	<h4 class="item">{{item}}</h4>
 	<p class="price">{{price}}</p>
-	<p>{{description}}</p>
+	<p class="description">{{description}}</p>
 	{{/CaneCucina}}
 	</script>
 
