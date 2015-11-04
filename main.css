@@ -164,37 +164,20 @@ ul {
 	float: right;
 }
 
-#news-post p {
-	/*text-align: justify;*/
+#news-post {
 	overflow: hidden;
 	text-overflow-multiline: ellipsis;
-	max-height: 100px;
-	line-height: 1.5;
-	max-height: 6em;
+	max-height: 140px;
+	line-height: 1.25em;
     position: relative;
     background: inherit;
   	display: block;
-    float: right; //might delete this
-    color: black; //might delete this
+    float: right; 
+    color: black; 
 }
 
-#news-post p {
-    /*text-align: justify;*/
-    overflow: hidden;
-    text-overflow-multiline: ellipsis;
-    max-height: 100px;
-    line-height: 1.5;
-    position: relative;
-    background: inherit;
-    display: block;
-    display: -webkit-box; //might delete this
-    max-width: 300px; //might delete this
-    height: 100px; //might delete this
-    margin: 0 auto; //might delete this
-    color: #000000;
-    font-size: 10px;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+#news-post a {
+    text-decoration: none;
 }
 
 
@@ -212,6 +195,10 @@ ul {
 	float: left;
 }
 
+#specialItem::after {
+    content: "  $";
+}
+
 #special-price {
   display: inline-block;
   vertical-align: top;
@@ -224,6 +211,13 @@ ul {
 }
 #special-price:before {
 	content: "$";
+}
+.special-price::before {
+    content: "$";
+}
+
+#specialsImage img {
+    margin-left: 85px;
 }
 #news {
     padding-left: 10px;
@@ -270,10 +264,15 @@ iframe {
 }
 #left-full-panel {
     width: 65%;
+    background: white none repeat scroll 0 0;
+    min-height: 975px;
+    float: left;
+    padding: 0px 0px 20px 5px;
+    /*width: 65%;
     background: white;
     margin-right: 2%;
     height: 1900px;
-    float: left;
+    float: left;*/
 }
 #right-full-panel{
 	width: 25%;
@@ -281,8 +280,16 @@ iframe {
 	border: 5px solid #b90f0f;
 	border-radius: 5px;
 	margin: 0 auto;
+    margin-left: 25px;
 	padding: 0;
 	float: right;
+    /*  width: 25%;
+    background: white;
+    border: 5px solid #b90f0f;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0;
+    float: right;*/
 }
 .tabs li {
     display: inline-block;
@@ -294,17 +301,19 @@ iframe {
 }
 .menu-course {
   margin: 1px;
+  font-style: italic;
 }
 .item {
-	display: inline-block;
+    display: inline-block;
 	position: relative;
-  font-size: 1.1rem;
-  font-weight: bold;
-  line-height: 0.9rem;
-  margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 0.9rem;
+    margin: 0;
 	top: 3px;
 	left: 2px;
 }
+
 .price {
 display: inline-block;
 vertical-align: top;
@@ -355,44 +364,44 @@ margin: 0 10px 0 0;
 
 
 #right-full-panel img {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
 }
 
 #foods {
     margin: 0 auto;
     padding: 0;
     margin-top:15px;
-    margin-left: 27.5px;
+    margin-left: 40px;
     margin-bottom: 10px;
 }
 
-.food-photo {
+/*.food-photo {
     height: 200px;
     width: 200px;
     border-radius: 5px;
     margin-bottom: 15px;
-}
+}*/
 
 .food-photo img {
-    height: 200px;
-    width: 200px;
+    height: 190px;
+    width: 190px;
     border-radius: 5px;
 }
 
 .foodPhoto {
     margin: 0 auto;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 
 #logo {
-    height: 200px;
-    width: 200px;
-    background: grey;
+    height: 180px;
+    width: 180px;
     margin-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #footer {
@@ -541,7 +550,6 @@ display: none;
 
 #tab1, #tab2, #tab3, #tab4 {
     width: 600px;
-    max-height: 500px;
     font-family: "Hind", "sans-serif";
 }
 
@@ -549,6 +557,11 @@ display: none;
     width: 275px;
     height: 183px;
     float: right;
+}
+
+#tab2 {
+    overflow: auto;
+    height: 975px;
 }
 
 #tabMenu {
@@ -631,8 +644,6 @@ display: none;
     padding-top: 0px;
 }
 
-width: 500px;
-}
 
 
 /*Sliding Menu CSS */
@@ -736,10 +747,15 @@ display: block;
 display: none;
 }
 
-#tab1, #tab2, #tab3, #tab4 {
+#tab1, #tab3, #tab4 {
 	width: 600px;
 	max-height: 500px;
 	font-family: "Hind", "sans-serif";
+}
+
+#tab2 {
+    width: 600px;
+    font-family: "Hind", "sans-serif";
 }
 
 #tab1 img {
@@ -826,4 +842,23 @@ display: none;
 #reviews {
 	margin-top: 0px;
 	padding-top: 0px;
+}
+
+
+.specialDescription {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* POPUPS */
+
+#favs {
+    display: none;
+}
+
+#favs:hover {
+    background: white;
+    border: black 1px solid;
+    border-radius: 5px;
+    width: 100px;
 }

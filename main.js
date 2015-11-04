@@ -1,6 +1,14 @@
 
 $(document).ready (function() {
 
+//var e = document.getElementbyID("favs");
+//	e.onmouseover = function() {
+//		document.getElementbyID("favs").style.display = "block";
+//	}
+//	e.onmouseout = function() {
+//		document.getElementbyID("favs").style.display = "none";
+//	}
+
 var itemToImageMap = {
     18: 'assets/restaurantphotos/pizza2.jpg'
 };
