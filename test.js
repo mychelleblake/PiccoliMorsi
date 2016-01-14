@@ -1,14 +1,14 @@
 var menu = {
 	"soups": [
 		{
-				"name": "chicken",
+				"name": "Chicken",
 				"price": {
 					"cup": 2,
 					"bowl": 4
 				}
 		},
 		{
-			"name": "minestrone",
+			"name": "Minestrone",
 			"price": {
 				"cup": 2,
 				"bowl": 4
@@ -16,11 +16,11 @@ var menu = {
 		}
 	],nuts": [
 		{
-			"name": "walnut",
+			"name": "Walnut",
 			"price": 2
 		},
 		{
-			"name": "hazelnut",
+			"name": "Hazelnut",
 			"price": 1.5
 		}
 	]

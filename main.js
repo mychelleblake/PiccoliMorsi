@@ -60,7 +60,7 @@ function rotateImages() {
 		// NEWS div content       ***************************************************************
 		//****************************************************************************************
 
-		var newsData = "http://79.170.44.100/piccolimorsi.com/news.json";
+		var newsData = "http://piccolimorsi.netai.net/news.json";
 
 		$.ajax({
 			url: newsData,
@@ -79,7 +79,7 @@ function rotateImages() {
 
 	// SPECIALS data for content    **********[!!!MAIN MENU IS NESTED UNDER SPECIALS API CALL!!]***********
 	//*********************************************************************************************
-	var specialsData = "http://79.170.44.100/piccolimorsi.com/special.json";
+	var specialsData = "http://piccolimorsi.netai.net/special.json";
 
 		$.ajax({
 			url: specialsData,
@@ -94,7 +94,7 @@ function rotateImages() {
 			var theSpecial = specialsBoxData.menu_item_id;
 
 //   MAIN (food) MENU HERE **********************************************************************
-			var menuData = "http://79.170.44.100/piccolimorsi.com/menu.json";
+			var menuData = "http://piccolimorsi.netai.net/menu.json";
 
 			$.ajax({
 				url: menuData,

@@ -5,7 +5,7 @@ var menu = {
         "id": 1,
         "item": "Mozzarella Caprese",
         "price": 2,
-        "description": "A magnificent dish made witg fresh and organic tomatos",
+        "description": "A Magnificent Dish Made with Fresh and Organic Tomatoes",
         "local fav": 1,
         "low sodium": 1,
         "under 500 cals": 1
@@ -14,16 +14,16 @@ var menu = {
         "id": 2,
         "item": "Cheese Platter",
         "price": 3,
-        "description": "Five different options of exquisite cheeese choose by our cheff",
+        "description": "Five Different Options of Exquisite Cheeses Chosen by our Chef",
         "local fav": 0,
         "low sodium": 0,
         "under 500 cals": 1
     },
     {
         "id": 3,
-        "item": "Tradicional Antipasto",
+        "item": "Traditional Antipasto",
         "price": 3,
-        "description": "Tasty and unique house recipe",
+        "description": "Tasty and Unique House Recipe",
         "local fav": 1,
         "low sodium": 0,
         "under 500 cals": 1
@@ -164,7 +164,7 @@ var menu = {
         "id": 17,
         "item": "Pizza Margherita",
         "price": 2,
-        "description": "San Masrzano sauce, mozarella cheese",
+        "description": "San Marzano Sauce, Mozzarella Cheese",
         "local fav": 0,
         "low sodium": 1,
         "under 500 cals": 1
@@ -173,7 +173,7 @@ var menu = {
         "id": 18,
         "item": "Pizza Bianca",
         "price": 2,
-        "description": "A Mozzarella cheese, arugula Prosciutto San Daniele",
+        "description": "Mozzarella Cheese, Arugula Prosciutto San Daniele",
         "local fav": 0,
         "low sodium": 1,
         "under 500 cals": 1
@@ -183,7 +183,7 @@ var menu = {
         "id": 19,
         "item": "Pizza Salisiccia",
         "price": 2,
-        "description": "San Marzano sauce, fennel, pine nuts",
+        "description": "San Marzano Sauce, Fennel, Pine Nuts",
         "local fav": 1,
         "low sodium": 1,
         "under 500 cals": 1
@@ -192,7 +192,7 @@ var menu = {
         "id": 20,
         "item": "Lasagna",
         "price": 3,
-        "description": "Five different options of exquisite cheeese choose by our cheff",
+        "description": "The Traditional Italian Favorite with Sausage and Ricotta",
         "local fav": 0,
         "low sodium": 0,
         "under 500 cals": 1
@@ -202,9 +202,9 @@ var menu = {
     "CaneCucina":[
         {
         "id": 21,
-        "item": "Picolli Cane Meatballs",
+        "item": "Piccoli Cane Meatballs",
         "price": 2,
-        "description": "Meet sauce, mozarella cheese",
+        "description": "Meat Sauce, Mozzarella Cheese",
         "local fav": 0,
         "low sodium": 1,
         "under 500 cals": 1
@@ -231,7 +231,7 @@ var menu = {
         "id": 24,
         "item": " Cane Chickenballs",
         "price": 3,
-        "description": "Chef's favorite",
+        "description": "Chef's Favorite",
         "local fav": 0,
         "low sodium": 0,
         "under 500 cals": 1
