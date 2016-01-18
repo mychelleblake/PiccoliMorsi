@@ -53,7 +53,7 @@
                     <a href = "#tab4">Reviews</a>
                 </li>
             </ul>
-					</div>
+          </div>
           </div> <!--tabMenu ends-->
 
     <!-- content in the tab menus -->
@@ -67,20 +67,21 @@
             </section>
 
             <section id="tab2" class="tab-content hide">
-							<div id="tab2" class="tab_content">
-								<h2>Our Menu Selections</h2>
+              <div id="tab2" class="tab_content">
+                <h2>Our Menu Selections</h2>
                 <p> <span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/> = Local Favorite</span>
                     <span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/> = Low Sodium</span>
                     <span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/> = Under 500 Calories</span></p>
-								<div class="menu_divisions" id="appetizers"></div>
-								<div class="menu_divisions" id="salads"></div>
-								<div class="menu_divisions" id="soups"></div>
-								<div class="menu_divisions" id="mains"></div>
-								<div class="menu_divisions" id="drinks"></div>
-								<div class="menu_divisions" id="desserts"></div>
-								<div class="menu_divisions" id="dogs"></div>
+                <div class="menu_divisions" id="breakfast"></div>
+                <div class="menu_divisions" id="salads"></div>
+                <div class="menu_divisions" id="soups"></div>
+                <div class="menu_divisions" id="sandwiches"></div>
+                <div class="menu_divisions" id="toppings"></div>
+                <div class="menu_divisions" id="drinks"></div>
+                <div class="menu_divisions" id="desserts"></div>
+                <div class="menu_divisions" id="veraDesserts"></div>
 
-							</div><!-- #tab2 -->
+              </div><!-- #tab2 -->
             </section>
 
             <section id="tab3" class="tab-content hide">
@@ -148,12 +149,12 @@
 
             <section id="tab4" class="tab-content hide">
                 <div id="reviews">
-									<!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_56355f15bc451(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_56355f15bc451"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_56355f15bc451=document.createElement('script');fcs_56355f15bc451.type="text/javascript";fcs_56355f15bc451.src=ajaxpath_56355f15bc451((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=56355f15bc451&s=&Size=10#!56355f15bc451");setTimeout("document.getElementById('fcs_div_56355f15bc451').appendChild(fcs_56355f15bc451)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
+                  <!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_56355f15bc451(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_56355f15bc451"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_56355f15bc451=document.createElement('script');fcs_56355f15bc451.type="text/javascript";fcs_56355f15bc451.src=ajaxpath_56355f15bc451((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=56355f15bc451&s=&Size=10#!56355f15bc451");setTimeout("document.getElementById('fcs_div_56355f15bc451').appendChild(fcs_56355f15bc451)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
 
                 </div>
             </section>
 
-			</div>
+      </div>
 
         <div id="right-full-panel">
             <ul id="foods">
@@ -173,126 +174,169 @@
         </div> <!-- End of right-full-panel div -->
 
 
-		<div id="footer">
-		<p class="copyright">Copyright 2015 PiccoliMorsi - Web Design by The Iron Yard</p>
-			<div id="footerSocial">
-			<ul id="footerUL">
-				<li><img src="assets/social/1446098534_facebook_online_social_media.png"/></li>
-				<li><img src="assets/social/1446098542_twitter_online_social_media.png"/></li>
-				<li><img src="assets/social/1446098560_instagram_online_social_media.png"/></li>
-			</ul>
-			</div>
-			</div> <!-- End of footer div-->
+    <div id="footer">
+    <p class="copyright">Copyright 2015 PiccoliMorsi - Web Design by The Iron Yard</p>
+      <div id="footerSocial">
+      <ul id="footerUL">
+        <li><img src="assets/social/1446098534_facebook_online_social_media.png"/></li>
+        <li><img src="assets/social/1446098542_twitter_online_social_media.png"/></li>
+        <li><img src="assets/social/1446098560_instagram_online_social_media.png"/></li>
+      </ul>
+      </div>
+      </div> <!-- End of footer div-->
 
 
 
 </div> <!-- END of wrapper div -->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
-		<script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+    <script src="main.js"></script>
 
-		<script type="x-tmpl-mustache" id="newsFormTemplate">
-				<h3 class="locationBoxH4">Latest News</h3>
-				<h5 id="news-title">{{data.title}}</h5>
-				<h5 id="news-date">{{data.date_published}}</h5> </br>
-				<p id="news-post">{{data.post}}&nbsp;<a href="#">Read more...</a></p>
-		</script>
-
-
+    <script type="x-tmpl-mustache" id="newsFormTemplate">
+        <h3 class="locationBoxH4">Latest News</h3>
+        <h5 id="news-title">{{data.title}}</h5>
+        <h5 id="news-date">{{data.date_published}}</h5> </br>
+        <p id="news-post">{{data.post}}&nbsp;<a href="#">Read more...</a></p>
+    </script>
 
 
-	<script type="x-tmpl-mustache" id="specialsFormTemplate">
-		<h3 class="locationBoxH4">Today&#39s Special</h3>
+
+
+  <script type="x-tmpl-mustache" id="specialsFormTemplate">
+    <h3 class="locationBoxH4">Today&#39s Special</h3>
         <div id="specialsImage"><img src="{{imgsrc}}"></div>
-		<p id="specialItem">{{td.item}}</p>
+    <p id="specialItem">{{td.item}}</p>
     <p id="special-Price">{{td.price}}</p>
     <p class="specialDescription">{{td.description}}</p>
-	</script>
+  </script>
 
-	<script type="x-tmpl-mustache" id="aboutFormTemplate">
-		<h3>Our Story</h3>
-		<p>{{data.text1}}</p>
-		<p></p>
-		<p>{{data.text2}}</p>
-	</script>
-	<script type="x-tmpl-mustache" id="appetizerFormTemplate">
-	<h2 class="menu-course">Appetizers</h2>
-	{{#appetizers}}
-	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p><br/>
-	<p class="description">{{description}}</p>
+  <!--<script type="x-tmpl-mustache" id="aboutFormTemplate">
+    <h3>Our Story</h3>
+    <p>{{data.text1}}</p>
+    <p></p>
+    <p>{{data.text2}}</p>
+  </script>-->
+
+  <script type="x-tmpl-mustache" id="breakfastFormTemplate">
+  <h2 class="menu-course">Breakfast</h2>
+  {{#breakfast}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
   {{#local fav}}<span class="menu-added"><img id="favs" src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
   {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
   {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
-	{{/appetizers}}
-	</script>
-	<script type="x-tmpl-mustache" id="saladFormTemplate">
-	<h2 class="menu-course">Salads</h2>
-	{{#salads}}
-	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p><br/>
-	<p class="description">{{description}}</p>
+  {{/breakfast}}
+  </script>
+
+  <script type="x-tmpl-mustache" id="saladsFormTemplate">
+  <h2 class="menu-course">Salads</h2>
+  {{#salads}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
   {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
   {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
   {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
-	{{/salads}}
-	</script>
-	<script type="x-tmpl-mustache" id="soupFormTemplate">
+  {{/salads}}
+  </script>
+
+  <script type="x-tmpl-mustache" id="soupsFormTemplate">
   <h2 class="menu-course">Soups</h2>
-	{{#soups}}
-	<h4 class="item">{{item}}</h4>
-	<p class="soup-price">cup: <span>{{price.cup}} </span></p><p class="soup-price">bowl: <span>{{price.bowl}} </span></p><br/>
-	<p class="description">{{description}}</p>
+  {{#soups}}
+  <h4 class="item">{{item}}</h4>
+  <p class="soup-price">cup: <span>{{price.cup}} </span></p><p class="soup-price">bowl: <span>{{price.bowl}} </span></p><br/>
+  <p class="description">{{description}}</p>
   {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
   {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
   {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
-	{{/soups}}
-	</script>
-	<script type="x-tmpl-mustache" id="mainFormTemplate">
-	<h2 class="menu-course">Entrees</h2>
-	{{#mains}}
-	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p><br/>
-	<p class="description">{{description}}</p>
+  {{/soups}}
+  </script>
+
+  <!--<script type="x-tmpl-mustache" id="sidesFormTemplate">
+  <h2 class="menu-course">Sides</h2>
+  {{#sides}}
+  <h4 class="item">{{item}}</h4>
+  <p class="sides-price">cup: <span>{{price.cup}} </span></p><p class="soup-price">bowl: <span>{{price.bowl}} </span></p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
+  {{/sides}}
+  </script>-->
+
+  <script type="x-tmpl-mustache" id="toppingsFormTemplate">
+  <h2 class="menu-course">Toppings</h2>
+  {{#toppings}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
+  {{/toppings}}
+  </script>
+
+  <!--<script type="x-tmpl-mustache" id="mainFormTemplate">
+  <h2 class="menu-course">Entrees</h2>
+  {{#mains}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
   {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
   {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
   {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
-	{{/mains}}
-	</script>
-	<script type="x-tmpl-mustache" id="drinkFormTemplate">
+  {{/mains}}
+  </script>-->
+
+  <!--<script type="x-tmpl-mustache" id="drinksFormTemplate">
   <h2 class="menu-course">Beverages</h2>
-	{{#drinks}}
-	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p><br/>
-	<p class="description">{{description}}</p>
+  {{#drinks}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
   {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
   {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
   {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
-	{{/drinks}}
-	</script>
-	<script type="x-tmpl-mustache" id="dessertFormTemplate">
-	<h2 class="menu-course">Desserts</h2>
-	{{#desserts}}
-	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p><br/>
-	<p class="description">{{description}}</p>
+  {{/drinks}}
+  </script>-->
+
+ <!-- <script type="x-tmpl-mustache" id="dessertsFormTemplate">
+  <h2 class="menu-course">Desserts</h2>
+  {{#desserts}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
   {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
   {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
   {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
-	{{/desserts}}
-	</script>
-	<script type="x-tmpl-mustache" id="dogFormTemplate">
-	<h2 class="menu-course">Cane Cucina</h2>
-	{{#CaneCucina}}
-	<h4 class="item">{{item}}</h4>
-	<p class="price">{{price}}</p><br/>
-	<p class="description">{{description}}</p>
+  {{/desserts}}
+  </script>-->
+
+  <!-- <script type="x-tmpl-mustache" id="veraDessertsFormTemplate">
+  <h2 class="menu-course">VeraDesserts</h2>
+  {{#veraDesserts}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
+  {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
+  {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
+  {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span>{{/under 500 cals}}<br/>
+  {{/veraDesserts}}
+  </script>-->
+
+  <!-- <script type="x-tmpl-mustache" id="dogFormTemplate">
+  <h2 class="menu-course">Cane Cucina</h2>
+  {{#CaneCucina}}
+  <h4 class="item">{{item}}</h4>
+  <p class="price">{{price}}</p><br/>
+  <p class="description">{{description}}</p>
   {{#local fav}}<span class="menu-added"><img src="assets/icons/Places-favorites-icon.png"/></span>{{/local fav}}
   {{#low sodium}}<span class="menu-added"><img src="assets/icons/icon-lowsodium-bg.gif"/></span>{{/low sodium}}
   {{#under 500 cals}}<span class="menu-added"><img src="assets/icons/icon_under500cal.gif"/></span><br/>{{/under 500 cals}}
-	{{/CaneCucina}}
-	</script>
+  {{/CaneCucina}}
+  </script>-->
 
 
 <!-- MUSTACHE TEMPLATES ********************************************************************* -->

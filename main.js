@@ -1,4 +1,5 @@
 
+
 $(document).ready (function() {
 
 //var e = document.getElementbyID("favs");
@@ -10,7 +11,7 @@ $(document).ready (function() {
 //	}
 
 var itemToImageMap = {
-    18: 'assets/restaurantphotos/pizza2.jpg'
+    25: 'assets/restaurantphotos/pizza2.jpg'
 };
 
 $(".nav-tabs > li > a").click(function(event) {
@@ -60,7 +61,7 @@ function rotateImages() {
 		// NEWS div content       ***************************************************************
 		//****************************************************************************************
 
-		var newsData = "http://piccolimorsi.netai.net/news.json";
+		var newsData = "https://json-data.herokuapp.com/restaurant/news/1";
 
 		$.ajax({
 			url: newsData,
@@ -79,7 +80,7 @@ function rotateImages() {
 
 	// SPECIALS data for content    **********[!!!MAIN MENU IS NESTED UNDER SPECIALS API CALL!!]***********
 	//*********************************************************************************************
-	var specialsData = "http://piccolimorsi.netai.net/special.json";
+	var specialsData = "https://json-data.herokuapp.com/restaurant/special/1";
 
 		$.ajax({
 			url: specialsData,
@@ -92,9 +93,13 @@ function rotateImages() {
 				};
 
 			var theSpecial = specialsBoxData.menu_item_id;
+		// 	var specialFormTemplate = $("#specialFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		// 	var formHTML = Mustache.render(specialFormTemplate, specialsDataPull);
+		// 	$("#special").html(formHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+		// });
 
 //   MAIN (food) MENU HERE **********************************************************************
-			var menuData = "http://piccolimorsi.netai.net/menu.json";
+			var menuData = "https://json-data.herokuapp.com/restaurant/menu/2";
 
 			$.ajax({
 				url: menuData,
@@ -106,69 +111,90 @@ function rotateImages() {
 					menuBoxData: menuBoxData
 				};
 
+				var breakfast = {
+					breakfast: menuBoxData.breakfast
+				};
 
+				var sandwiches = {
+					sandwiches: menuBoxData.sandwiches
+				};
 
-				var appetizers = {
-					appetizers: menuBoxData.Appetizers
+				var toppings =  {
+					toppings: menuBoxData.toppings
+				};
+
+				var sides = {
+					sides: menuBoxData.sides
 				};
 
 				var salads = {
-					salads: menuBoxData.Salads
+					salads: menuBoxData.salads
 				};
 
-				var soups =  {
-					soups: menuBoxData.Soups
-				};
-
-				var mains = {
-					mains: menuBoxData.Mains
+				var soups = {
+					soups: menuBoxData.soups
 				};
 
 				var drinks = {
-					drinks: menuBoxData.Drinks
-				};
-
-				var desserts = {
-					desserts: menuBoxData.Desserts
-				};
-
-				var CaneCucina = {
-					CaneCucina: menuBoxData.CaneCucina
+					drinks: menuBoxData.drinks
 				};
 				
+				var desserts = {
+					desserts: menuBoxData.desserts
+				};
 
-		var appetizerFormTemplate = $("#appetizerFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
-		var appetizerHTML = Mustache.render(appetizerFormTemplate, appetizers);
-		$("#appetizers").html(appetizerHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+				var veraDesserts = {
+					veraDesserts: menuBoxData.veraDesserts
+				};
 
-		var saladFormTemplate = $("#saladFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
-		var saladHTML = Mustache.render(saladFormTemplate, salads);
-		$("#salads").html(saladHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+		var breakfastFormTemplate = $("#breakfastFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var breakfastHTML = Mustache.render(breakfastFormTemplate, breakfast);
+		$("#breakfast").html(breakfastHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 
-		var soupFormTemplate = $("#soupFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
-		var soupHTML = Mustache.render(soupFormTemplate, soups);
-		$("#soups").html(soupHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+		var sandwichesFormTemplate = $("#sandwichesFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var sandwichesHTML = Mustache.render(sandwichesFormTemplate, sandwiches);
+		$("#sandwiches").html(sandwichesHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+		
+		var toppingsFormTemplate = $("#toppingsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var toppingsHTML = Mustache.render(toppingsFormTemplate, toppings);
+		$("#toppings").html(toppingsHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 
-		var mainFormTemplate = $("#mainFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
-		var mainHTML = Mustache.render(mainFormTemplate, mains);
-		$("#mains").html(mainHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+		var sidesFormTemplate = $("#sidesFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var sidesHTML = Mustache.render(sidesFormTemplate, sides);
+		$("#sides").html(sidesHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 
-		var drinkFormTemplate = $("#drinkFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
-		var drinkHTML = Mustache.render(drinkFormTemplate, drinks);
-		$("#drinks").html(drinkHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+		var saladsFormTemplate = $("#saladsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var saladsHTML = Mustache.render(saladsFormTemplate, salads);
+		$("#salads").html(saladsHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 
-		var dessertFormTemplate = $("#dessertFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
-		var dessertHTML = Mustache.render(dessertFormTemplate, desserts);
-		$("#desserts").html(dessertHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+		var soupsFormTemplate = $("#soupsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var soupsHTML = Mustache.render(soupsFormTemplate, soups);
+		$("#soups").html(soupsHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 
-		var dogFormTemplate = $("#dogFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
-		var dogHTML = Mustache.render(dogFormTemplate, CaneCucina);
-		$("#dogs").html(dogHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+		// var mainFormTemplate = $("#mainFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		// var mainHTML = Mustache.render(mainFormTemplate, mains);
+		// $("#mains").html(mainHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+
+		var drinksFormTemplate = $("#drinksFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var drinksHTML = Mustache.render(drinksFormTemplate, drinks);
+		$("#drinks").html(drinksHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+
+		var dessertsFormTemplate = $("#dessertsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var dessertsHTML = Mustache.render(dessertsFormTemplate, desserts);
+		$("#desserts").html(dessertsHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+
+		var veraDessertsFormTemplate = $("#dessertsFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		var veraDessertsHTML = Mustache.render(veraDessertsFormTemplate, veraDesserts);
+		$("#veraDesserts").html(veraDessertsHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
+
+		// var dogFormTemplate = $("#dogFormTemplate").text();   //CHANGE THE NAME OF THE ID BASED ON HTML
+		// var dogHTML = Mustache.render(dogFormTemplate, CaneCucina);
+		// $("#dogs").html(dogHTML);  //CHANGE THE NAME OF THE ID BASED ON HTML
 
 
 // This generates the "Today's Specials" box in the middle of the 'api-panel' div ***********************
 // ***[uses 'theSpecial' var from above]**************************************************************************************************
-						var menuSpecial = menuBoxData.Mains.filter(function(item){
+						var menuSpecial = menuBoxData.sides.filter(function(item){
 							if (item.id === theSpecial) {
 								return true;
 							} else {
